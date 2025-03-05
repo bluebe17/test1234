@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+</body>
+</html>
+<script>
+    window.onload = function() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isMobile = /iphone|ipod|android|blackberry|windows phone/i.test(userAgent);
+
+        if (isMobile || window.innerWidth <= 768) {
+            // 모바일 화면일 경우
+            alert("모바일");
+        } else {
+            // PC 화면일 경우
+            alert("PC");
+        }
+    }
+</script>
